@@ -1,0 +1,284 @@
+    @charset "UTF-8";
+    @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+    :root {
+        --cor-primaria: #E478FF;
+        --cor-secundaria: #000080;
+        --cor-terciaria: #8CE994;
+        --fonte-titulo: "Krona One", sans-serif;
+        --fonte-conteudo: "Montserrat", "sans-serif";
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: var(--cor-primaria);
+
+    }
+
+    body {
+
+        height: 100vh;
+        width: 98.7vw;
+        box-sizing: border-box;
+        /*Isso garante que a largura e altura dos elementos filhos sejam calculadas incluindo bordas e paddings, evitando que eles ultrapassem os limites do body.*/
+    }
+
+    .idiomas {
+        background-color: var(--cor-primaria);
+        text-align: end;
+    }
+
+    .img-language {
+        width: 10%;
+        cursor: pointer;
+    }
+
+    main.apresentacao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2%;
+        gap: 82px;
+        background-color: var(--cor-primaria);
+    }
+
+    .conteudo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .conteudo__container {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        /* height: 90vh; adicionar esse comando no media querye para telas maiores. */
+    }
+
+
+    .conteudo__img {
+        width: 60%;
+        /* Essa porcentagem é aplicada na imagem como parâmetro a tag pai, que no caso é a main*/
+        border-radius: 100%;
+        border: 4px solid var(--cor-secundaria);
+    }
+
+    .container__descricao {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .descricao__titulo {
+        color: var(--cor-secundaria);
+        font-size: 2.25rem;
+        font-family: var(--fonte-titulo);
+    }
+
+    .destaque {
+        color: var(--cor-terciaria);
+    }
+
+
+    .descricao__texto {
+        font-family: var(--fonte-conteudo);
+        font-weight: 400;
+        line-height: 24px;
+        font-size: 1rem;
+        background-color: var(--cor-primaria);
+        color: var(--cor-secundaria);
+    }
+
+
+
+    .projetos__titulo {
+        margin: 50pxs 0 0 0;
+        font-size: 1.50rem;
+        font-family: var(--fonte-titulo);
+        color: var(--cor-secundaria);
+
+    }
+
+
+
+    .container__projetos {
+        margin: auto;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .container__card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+
+    }
+
+    .projetos__card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        background-color: #E478FF;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: column;
+        width: 47%;
+        height: 100px;
+        border: 3px solid var(--cor-terciaria);
+        border-radius: 5px;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .test_modal {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 100px;
+        border: 3px solid var(--cor-terciaria);
+        border-radius: 5px;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .test:hover {
+        transition: 1s;
+        border: 3px solid var(--cor-secundaria);
+    }
+
+    .projetos__card>p {
+        text-align: center;
+        font-family: var(--fonte-titulo);
+        padding-top: 2px;
+    }
+
+    .projetos__card>img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    /* MODAL */
+    .teste {
+        color: var(--cor-secundaria);
+        text-decoration: none;
+        cursor: pointer;
+        display: block;
+        margin-left: auto;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+
+    .teste:hover {
+        color: var(--cor-terciaria);
+        transition: 0.8s;
+    }
+
+    
+    .modal-body {
+        display: flex;
+        gap: 3px;
+    }
+
+
+    .projetos__card-modal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        background-color: #E478FF;
+
+    }
+
+    .projetos__card-modal>p {
+        text-align: center;
+        font-family: var(--fonte-titulo);
+        padding-top: 2px;
+    }
+
+    .projetos__card-modal>img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    /* TÉRMINO DO MODAL */
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .links>h2 {
+        color: var(--cor-secundaria);
+        text-align: center;
+        font-family: var(--fonte-titulo);
+        font-size: 1.5rem;
+
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        width: 50%;
+        padding: 21.5px 0;
+        border-radius: 8px;
+        border: 3px solid var(--cor-secundaria);
+        size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+        color: var(--cor-secundaria);
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    .redes:hover {
+        color: var(--cor-terciaria);
+        transition: 0.8s;
+    }
+
+    footer {
+        padding: 10px 30px;
+        text-align: center;
+        background-color: var(--cor-terciaria);
+        font-family: var(--fonte-conteudo);
+        font-weight: bold;
+
+    }
+
+    footer>p>a {
+        text-decoration: none;
+        color: var(--cor-primaria);
+    }
+
+    

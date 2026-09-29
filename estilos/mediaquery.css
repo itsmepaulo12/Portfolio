@@ -1,0 +1,220 @@
+@media (min-width:1100px) {
+
+    .idiomas {
+        background-color: var(--cor-primaria);
+        text-align: end;
+    }
+
+    .img-language {
+        width: 2%;
+        cursor: pointer;
+    }
+
+    .navegacao {
+        display: flex;
+        gap: 30px;
+
+    }
+
+
+    .navegacao>a {
+        color: var(--cor-terciaria);
+        font-size: 1.5rem;
+        text-decoration: none;
+        font-family: var(--fonte-conteudo);
+        font-weight: 600;
+
+    }
+
+    .navegacao a:hover {
+        color: var(--cor-secundaria);
+        transition: 0.8s;
+    }
+
+    main.apresentacao {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5%;
+        gap: 82px;
+    }
+
+    .conteudo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .conteudo__container {
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .descricao__titulo {
+        color: var(--cor-secundaria);
+        font-size: 2.25rem;
+        font-family: var(--fonte-titulo);
+    }
+
+    .destaque {
+        color: var(--cor-terciaria);
+    }
+
+
+    .descricao__texto {
+        font-family: var(--fonte-conteudo);
+        font-weight: 400;
+        line-height: 24px;
+        size: 24px;
+        background-color: var(--cor-primaria);
+        color: var(--cor-secundaria);
+    }
+
+
+    .projetos__titulo {
+        margin: 0 0 0 0;
+        font-size: 1.50rem;
+        font-family: var(--fonte-titulo);
+        color: var(--cor-secundaria);
+
+    }
+
+    .container__projetos {
+        margin: 50px auto;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .test {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 200px;
+        border: 3px solid var(--cor-terciaria);
+        border-radius: 5px;
+        align-items: center;
+        text-decoration: none;
+
+    }
+
+
+
+    /* MODAL */
+    .modal-body {
+        display: block;
+        gap: 3px;
+    }
+
+    .container__card {
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .test_modal {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 200px;
+        border: 3px solid var(--cor-terciaria);
+        border-radius: 5px;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .projetos__card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        background-color: #E478FF;
+    }
+
+    .projetos__card>p {
+        text-align: center;
+        font-size: 1.3rem;
+
+    }
+
+    .projetos__card>img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .links {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        /* Por padrão ao inserir o display flex, o flex-direction vem como row */
+        align-items: center;
+        /*como alteramos o fflex direction para colunas (vertical), a tag align items também é alterada, sendo assim posicionando os itens verticalmente*/
+        gap: 20px;
+
+    }
+
+    .links>h2 {
+        color: var(--cor-secundaria);
+        text-align: center;
+        font-family: var(--fonte-titulo);
+        font-size: 1.5rem;
+
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        width: 50%;
+        padding: 21.5px 0;
+        border-radius: 8px;
+        border: 3px solid var(--cor-secundaria);
+        size: 24px;
+        font-weight: 600;
+        cursor: pointer;
+        color: var(--cor-secundaria);
+        text-decoration: none;
+        font-size: 1.3rem;
+    }
+
+    .redes:hover {
+        color: var(--cor-terciaria);
+        transition: 0.8s;
+    }
+
+    .conteudo__img {
+        width: 35%;
+        /* Essa porcentagem é aplicada na imagem como parâmetro a tag pai, que no caso é a main*/
+        border-radius: 100%;
+        border: 4px solid var(--cor-terciaria);
+    }
+
+    footer {
+        padding: 10px 30px;
+        text-align: center;
+        background-color: var(--cor-terciaria);
+        font-family: var(--fonte-conteudo);
+        font-weight: bold;
+
+    }
+
+    footer>p>a {
+        text-decoration: none;
+        color: var(--cor-secundaria);
+    }
+
+}

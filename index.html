@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link rel="shortcut icon" href="imagens/BLND.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Portfólio</title>
+</head>
+
+<body>
+
+    <div class="idiomas">
+        <span value="pt"><img src="imagens/brasil.png" alt="Português" onclick="trocarIdioma('pt')"
+                class="img-language"></span>
+        <span value="en"><img src="imagens/us.png" alt="English" onclick="trocarIdioma('en')"
+                class="img-language"></span>
+    </div>
+
+    <main class="apresentacao">
+
+        <section class="conteudo">
+            <div class="conteudo__container">
+                <img src="imagens/itsmepaulo.png" alt="paulo" class="conteudo__img">
+                <div class="container__descricao">
+                    <h1 class="descricao__titulo" id="titulo">
+                        Paulo – Desenvolvedor Front-End | <strong class="destaque">Criador Apaixonado por Tecnologia e
+                            arte.</strong>
+                    </h1>
+                    <p class="descricao__texto" id="descricaoPrimeiro">
+                        Sou um desenvolvedor front-end comprometido em transformar ideias criativas em experiências
+                        digitais funcionais e envolventes. Com um olhar apurado para design e uma paixão constante por
+                        inovação tecnológica, busco unir arte ao desenvolvimento de interfaces digitais modernas e
+                        intuitivas.
+                    <p>
+                    <p class="descricao__texto" id="descricaoSegundo">
+                        Tenho um forte interesse por aprendizado contínuo, sempre me atualizando com as melhores
+                        práticas e tendências do mercado, além de estar em uma jornada para me tornar fluente em inglês
+                        e expandir minhas oportunidades profissionais globais.
+                    </p>
+
+                    <h2 class="descricao__titulo" id="tituloCompetencias">Principais Competências</h2>
+                    <p class="descricao__texto" id="descricaoTerceiro">Desenvolvimento de interfaces responsivas com
+                        foco em usabilidade. Domínio de tecnologias modernas como HTML, CSS, JavaScript e frameworks CSS
+                        como Bootstrap 5 e Tailwind.
+                    </p>
+                    <p class="descricao__texto" id="descricaoQuarto">Forte senso estético para design e experiência do
+                        usuário. Capacidade de trabalho em equipe e resolução criativa de problemas. Sempre aberto a
+                        colaborar em projetos inovadores que promovam a integração de tecnologia.
+                    </p>
+                </div>
+            </div>
+
+            <h2 class="projetos__titulo" id="tituloProjetos">Principais projetos</h2>
+            <div class="container__projetos">
+
+                <a href="https://itsmepaulo.github.io/blnd-store/index.html" class="test" target="_blank">
+                    <div class="projetos__card"> <!-- colocar direction colunm -->
+                        <p>blnd store</p>
+                        <img src="imagens/blnd-store.png" alt="">
+                    </div>
+                </a>
+
+
+                <a href="" class="test" target="_blank">
+                    <div class="projetos__card"> <!-- colocar direction colunm -->
+                        <p>nome do projeto</p>
+                        <img src="" alt="">
+                    </div>
+                </a>
+
+                <a href="" class="test" target="_blank">
+                    <div class="projetos__card"> <!-- colocar direction colunm -->
+                        <p>nome do projeto</p>
+                        <img src="" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Button trigger modal -->
+            <a class="teste" data-bs-toggle="modal" data-bs-target="#exampleModal" id="verMais">
+                Ver mais
+            </a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Projetos</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container__card">
+                                <a href="https://itsmepaulo.github.io/blnd-store/index.html" class="test_modal"
+                                    target="_blank">
+                                    <div class="projetos__card"> <!-- colocar direction colunm -->
+                                        <p>blnd store</p>
+                                        <img src="imagens/blnd-store.png" alt="">
+                                    </div>
+                                </a>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, ullam. Officia
+                                    harum maxime nisi, amet debitis pariatur nesciunt rerum, ab totam quod, dicta quia
+                                    in provident! Quae ipsum sint veritatis. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Porro, praesentium nulla reiciendis esse assumenda quos. Quo
+                                    eligendi, recusandae voluptates dolor, ex temporibus quia in sint reiciendis,
+                                    nesciunt tempore voluptatum optio? Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Neque sed nostrum dolores et quibusdam possimus! Modi
+                                    exercitationem quos dolorem mollitia, officia fugiat debitis obcaecati, unde eaque
+                                    deserunt iure explicabo nihil.</p>
+                            </div>
+                            <div class="container__card">
+                                <a href="https://itsmepaulo.github.io/blnd-store/index.html" class="test_modal"
+                                    target="_blank">
+                                    <div class="projetos__card"> <!-- colocar direction colunm -->
+                                        <p>blnd store</p>
+                                        <img src="imagens/blnd-store.png" alt="">
+                                    </div>
+                                </a>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, ullam. Officia
+                                    harum maxime nisi, amet debitis pariatur nesciunt rerum, ab totam quod, dicta quia
+                                    in provident! Quae ipsum sint veritatis. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Porro, praesentium nulla reiciendis esse assumenda quos. Quo
+                                    eligendi, recusandae voluptates dolor, ex temporibus quia in sint reiciendis,
+                                    nesciunt tempore voluptatum optio? Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Neque sed nostrum dolores et quibusdam possimus! Modi
+                                    exercitationem quos dolorem mollitia, officia fugiat debitis obcaecati, unde eaque
+                                    deserunt iure explicabo nihil.</p>
+                            </div>
+                            <div class="container__card">
+                                <a href="https://itsmepaulo.github.io/blnd-store/index.html" class="test_modal"
+                                    target="_blank">
+                                    <div class="projetos__card"> <!-- colocar direction colunm -->
+                                        <p>blnd store</p>
+                                        <img src="imagens/blnd-store.png" alt="">
+                                    </div>
+                                </a>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia, ullam. Officia
+                                    harum maxime nisi, amet debitis pariatur nesciunt rerum, ab totam quod, dicta quia
+                                    in provident! Quae ipsum sint veritatis. Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Porro, praesentium nulla reiciendis esse assumenda quos. Quo
+                                    eligendi, recusandae voluptates dolor, ex temporibus quia in sint reiciendis,
+                                    nesciunt tempore voluptatum optio? Lorem ipsum, dolor sit amet consectetur
+                                    adipisicing elit. Neque sed nostrum dolores et quibusdam possimus! Modi
+                                    exercitationem quos dolorem mollitia, officia fugiat debitis obcaecati, unde eaque
+                                    deserunt iure explicabo nihil.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                                id="closeButton">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="links">
+                <h2 id="minhasRedes">Acesse minhas redes:</h2>
+                <a class="redes" href="https://github.com/itsmepaulo" target="_blank"><img src="imagens/github.png"
+                        alt="">GitHub</a>
+                <a class="redes"
+                    href="https://www.linkedin.com/in/itsmepaulo/"
+                    target="_blank"><img src="imagens/linkedin.png" alt="">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p id="descricaoFooter">Desenvolvido por <a href="https://www.linkedin.com/in/itsmepaulo/" target="_blank">Paulo
+                Henrique</a>.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
